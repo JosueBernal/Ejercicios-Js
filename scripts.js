@@ -88,22 +88,69 @@ function PesoIdeal(){
  }
 }
 
-
-
-
-
-function compu(){
-  let jugaddor = prompt("¿Piedra, Papel o ...?");
-  let tiro = Math.floor(Math.random() * 3); // 0 - 2
-  if (jugador == "Pierda" && compu == "tijeras"){
-  console.log("Ganaste");
-} else if (true) {
-
-}
-
-}
-
 // Math.random(); // Numero random entre el 0 y 1 (con desimales)
 // Math.round(); // Redondea arriba y abajo
 // Math.floor(); // Redondea hacia abajo
 // Math.cell(); // Redondea hacia abajo
+
+//Juego piedra papel o tijeras.
+function PiedraPapelTijera(){
+ let Jugador = prompt("¿Piedra, papel o tijera?");
+    var tiro =  Math.floor((Math.random()*3));
+    var respuesta;
+    if (tiro == 1) {
+        tiro_compu = "Piedra";
+    } else if (tiro == 2) {
+        tiro_compu = "Papel";
+    } else {
+        tiro_compu = "Tijera";
+    }
+    console.log(Jugador + tiro_compu)
+    if (Jugador == "Piedra" && tiro_compu == "Papel") {
+      console.log("Jugador" + Jugador +" vs " + "Tiro Compu" + tiro_compu +" gana la compu.");
+    } else if (Jugador == "Piedra" && tiro_compu == "Tijera") {
+      console.log("Jugador" + Jugador +" vs " + "Tiro Comppu" + tiro_compu + ", gana el Jugador");
+    } else if (Jugador == "Piedra" && tiro_compu == "Piedra") {
+      console.log("Jugador" +Jugador +" vs " + "Tiro Compu" + tiro_compu + ", empate, intenta de nuevo");
+    } else if (Jugador == "Papel" && tiro_compu == "Tijera") {
+      console.log("Jugador" + Jugador +" vs " + "Tiro Compu" + tiro_compu + ", gana el compu.");
+    } else if (Jugador == "Papel" && tiro_compu == "Piedra"){
+      console.log("Jugador" + Jugador +" vs " + "Tiro Compu" + tiro_compu + ", gana el Jugador");
+    }else if (Jugador == "Papel" && tiro_compu == "Papel") {
+      console.log("Jugador" + Jugador +" vs " + "Tiro Compu" + tiro_compu + ", empate, intenta de nuevo");
+    } else if (Jugador == "Tijera" && tiro_compu == "Piedra") {
+      console.log("Jugador" + Jugador +" vs " + "Tiro Compu" + tiro_compu + ", gana el compu.");
+    } else if (Jugador == "Tijera" && tiro_compu == "Papel") {
+      console.log("Jugador" + Jugador +" vs " + "Tiro Compu" + tiro_compu + ", gana el Jugador");
+    }else if (Jugador == "Tijera" && tiro_compu == "Tijera") {
+      console.log("Jugador" + Jugador +" vs " + "Tiro Compu" + tiro_compu + ", empate, intenta de nuevo");
+    }
+}
+
+function PiedraPapelTijeraJugador1VsJugador2(){
+  let Jugador1 = prompt("¿Piedra, papel o tijera?(jugador 1)");
+  let Jugador2 = prompt("¿Piedra, papel o tijera?(jugador 2)");
+  console.log(Jugador1 + Jugador2)
+   if (Jugador1 == "Piedra" && Jugador2 == "Papel") {
+     console.log("Jugador1" + Jugador1 +" vs " + "Jugador2" + tiro_compu +" Gana Jugador2.");
+   } else if (Jugador1 == "Piedra" && Jugador2 == "Tijera") {
+     console.log("Jugador1" + Jugador1 +" vs " + "Jugador2u" + Jugador2 + ", Gana el Jugador1");
+   } else if (Jugador1 == "Piedra" && Jugador2 == "Piedra") {
+     console.log("Jugador1" +Jugador1 +" vs " + "Jugador2" + Jugador2 + ", Empate, intenta de nuevo");
+     PiedraPapelTijeraJugador1VsJugador2();
+   } else if (Jugador1 == "Papel" && Jugador2 == "Tijera") {
+     console.log("Jugador1" + Jugador1 +" vs " + "Jugador2" + Jugador2 + ", Gana Jugador2.");
+   } else if (Jugador1 == "Papel" && Jugador2 == "Piedra"){
+     console.log("Jugador1" + Jugador1 +" vs " + "Jugador2" + Jugador2 + ", Gana el Jugador1");
+   } else if (Jugador1 == "Papel" && Jugador2 == "Papel") {
+     console.log("Jugador1" + Jugador1 +" vs " + "Jugador2" + Jugador2 + ", Empate, intenta de nuevo");
+     PiedraPapelTijeraJugador1VsJugador2();
+   } else if (Jugador1 == "Tijera" && Jugador2 == "Piedra") {
+     console.log("Jugador1" + Jugador1 +" vs " + "Jugador2" + Jugador2 + ", Gana Jugador2.");
+   } else if (Jugador1 == "Tijera" && Jugador2 == "Papel") {
+     console.log("Jugador1" + Jugador1 +" vs " + "Jugador2" + Jugador2 + ", Gana el Jugador1");
+   } else if (Jugador1 == "Tijera" && Jugador2 == "Tijera") {
+     console.log("Jugador1" + Jugador1 +" vs " + "Jugador2" + Jugador2 + ", Empate, intenta de nuevo");
+     PiedraPapelTijeraJugador1VsJugador2();
+   }
+}
