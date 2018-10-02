@@ -158,3 +158,54 @@ function PiedraPapelTijeraJugador1VsJugador2(){
      PiedraPapelTijeraJugador1VsJugador2();
    }
 }
+
+// Ejercicio Fibonacci
+function Fibonacci() {
+  let numero = Number(prompt("Hasta que numero quieres saber?"));
+  let resultadoA = 0;
+  let resultadoB = 1;
+  let resultadoC;
+
+  for (let contador = 0; contador <= numero; contador ++) {
+        if (contador == 0){
+          console.log("El numero 1 de la serie es: 0");
+        }
+        if (contador == 1) {
+          console.log("El numero 2 de la serie es: 1");
+        }
+        if (contador > 1){
+          resultadoC = resultadoA + resultadoB;
+          console.log("El numero " + contador + " de la serie es: " + resultadoC);
+          resultadoA = resultadoB;
+          resultadoB = resultadoC;
+        }
+      }
+    }
+
+    // let mascotas = ["perro", "gato", "perico","hamster","elefante"];
+    //
+    // for(let i = 0; i < mascotas.leng; i++) {
+    //   console.log(macotas[i], "vuelta" + i);
+    // }
+
+  function contraseña(){
+    let contraseña = prompt("Escribe tu contraseña");
+    console.log("Tu contraseña es: " + contraseña);
+    contraseña = contraseña.split("");
+    for(let i = 0; i <= contraseña.length; i++) {
+      if (contraseña[i] == "a"){
+        contraseña[i] = 4;
+      }else if (contraseña[i] == "e") {
+        contraseña[i] = 3;
+      }else if (contraseña[i] == "i") {
+        contraseña[i] = 1;
+      }else if (contraseña[i] == "o") {
+        contraseña[i] = 0;
+      }else if (contraseña[i] == "u") {
+        contraseña[i] = 7;
+      }
+    }
+    contraseña = contraseña.join("");
+    contraseña = contraseña.toString();
+    console.log("Tu contraseña seria: " + contraseña);
+  }
