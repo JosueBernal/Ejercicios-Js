@@ -209,3 +209,36 @@ function Fibonacci() {
     contraseña = contraseña.toString();
     console.log("Tu contraseña seria: " + contraseña);
   }
+
+  function palindromo(){
+    let palabra = prompt("Identifica si una palabra es un palindromo. Escribe una palabra");
+    console.log(palabra);
+    palabra = palabra.split("");
+    // for(let i = 0; i <= palabra.length; i++) {
+    palabra = palabra.revverse();
+    console.log(palabra);
+  }
+// -------------------------------
+
+const historiaBoton = document.querySelector("#historia-boton");
+const historiaNombre =document.querySelector("#nombre");
+const historyBox = document.querySelector("#history-box");
+const historiaedad =document.querySelector("#edad");
+const historiaCiudad =document.querySelector("#ciudad");
+const historiaMusica =document.querySelector("#musica");
+const historiaEscuela =document.querySelector("#escuela");
+
+historiaBoton.addEventListener("click" , generateHistory);
+
+function generateHistory() {
+  event.preventDefault();
+
+  let nombre = historiaNombre.value;
+  let edad = historiaedad.value;
+  let ciudad = historiaCiudad.value;
+  let musica = historiaMusica.value;
+  let escuela = historiaEscuela.value;
+  let history = "Hola mi nombre es " + nombre + ", y esta es mi historia. Tengo " + edad + " años y vivo en " + ciudad + ". Me gusta mucho escuchar " + musica + " , lo podría hacer todo el día sin parar. Actualmete estudio en " + escuela + " y salgo hasta las 10pm";
+
+  historyBox.innerHTML = history;
+}

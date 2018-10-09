@@ -1,9 +1,33 @@
-.button {
-  background-color: blue;
-  color: white;
-  cursor: pointer;
-  padding: 20px;
-  margin: 30px;
+body {
+  background-color: #BDC4A7;
+  font-family: arial;
 }
+
+:root {
+  --primary-color;
+}
+
+.tarjeta {
+  background-color: #450920;
+  color: #F1F0EA;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 20px;
+  margin: 20px;
+  vertical-align: top;
+  width: 200px;
+}
+
+.tarjeta button{
+  background-color: #020122;
+  color: #F1F0EA;
+  padding: 10px;
+}
+
+.history-input {
+  margin: 15px 0;
+
+}
+
 /* css font-family: sistem-ui;uhytr
 */

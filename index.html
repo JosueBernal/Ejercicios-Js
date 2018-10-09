@@ -6,17 +6,71 @@
       <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-      <button class="button"onclick="HorasDeSueño();">Horas de sueño</button>
-      <button class="button"onclick="TipoDeDatos();">Tipo De Datos</button>
-      <button class="button"onclick="regaño();">Regaño</button>
-      <button class="button"onclick="EjemploIf();">Ejemplo If</button>
-      <button class="button"onclick="TotalDeSupermercado();">Total de supermercado</button>
-      <button class="button"onclick="HambreTristeza();">Estoy triste o feliz</button>
-      <button class="button"onclick="PesoIdeal();">Mi Peso Ideal</button>
-      <button class="button"onclick="PiedraPapelTijera();">Piedra papel tijera</button>
-      <button class="button"onclick="PiedraPapelTijeraJugador1VsJugador2();">Piedra papel tijera J1 vs J2</button>
-      <button class="button"onclick="Fibonacci();">Fibonacci</button>
-      <button class="button"onclick="contraseña();">contraseña</button>
+      <article class="tarjeta">
+        <h3>Calcula cuantas horas dormiste</h3>
+        <button class="button"onclick="HorasDeSueño();">Horas de sueño</button>
+      </article>
+      <article class="tarjeta">
+        <h3>Ejemplo tipo de datos</h3>
+          <button class="button"onclick="TipoDeDatos();">Tipo De Datos</button>
+      </article>
+      <article class="tarjeta">
+        <h3>Regaño</h3>
+        <button class="button"onclick="regaño();">Regaño</button>
+      </article>
+      <article class="tarjeta">
+        <h3>EjemploIf</h3>
+        <button class="button"onclick="EjemploIf();">Ejemplo If</button>
+      </article>
+      <article class="tarjeta">
+        <h3>Total de supermercado</h3>
+        <button class="button"onclick="TotalDeSupermercado();">Total de supermercado</button>
+      </article>
+      <article class="tarjeta">
+        <h3>Feliz o triste</h3>
+        <button class="button"onclick="HambreTristeza();">Estoy triste o feliz</button>
+      </article>
+      <article class="tarjeta">
+        <h3>Paeo Ideal</h3>
+        <button class="button"onclick="PesoIdeal();">Mi Peso Ideal</button>
+      </article>
+      <article class="tarjeta">
+        <h3>Piedra Papel Tijera</h3>
+        <button class="button"onclick="PiedraPapelTijera();">Piedra papel tijera</button>
+        </article>
+      <article class="tarjeta">
+        <h3>Piedra Papel Tijera J1 Vs J2</h3>
+        <button class="button"onclick="PiedraPapelTijeraJugador1VsJugador2();">Piedra papel tijera J1 vs J2</button>
+      </article>
+      <article class="tarjeta">
+        <h3>Fibonacci</h3>
+        <button class="button"onclick="Fibonacci();">Fibonacci</button>
+      </article>
+      <article class="tarjeta">
+        <h3>Contradeña</h3>
+        <button class="button"onclick="contraseña();">contraseña</button>
+      </article>
+      <article class="tarjeta">
+        <h3>Palindromo</h3>
+        <button class="button"onclick="palindromo();">Palindromo</button>
+      </article>
+      <article class="tarjeta">
+        <h3 class"Historia">Historia</h3>
+        <form action="">
+          <label for= "nombre">Nombre de tu personaje</lebel>
+          <input id="nombre" type="text">
+          <lebel for= "edad">Edad del personaje</lebel>
+          <input id="edad" type="Numbe">
+          <lebel for= "ciudad">Ciudad del personaje</lebel>
+          <input id="ciudad" type="text">
+          <lebel for= "musica">Que musica le gusta?</lebel>
+          <input id="musica" type="text">
+          <lebel for= "escuela">En donde estudia?</lebel>
+          <input id="escuela" type="text">
+          <button id="historia-boton" class="history-input" type="submit">Genera tu historia</button>
+        </form>
+        <p id="history-box">Lugar de la historia</p>
+      </article>
       <script src="scripts.js"></script>
     </body>
   </html>
