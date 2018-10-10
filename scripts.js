@@ -215,7 +215,7 @@ function Fibonacci() {
     console.log(palabra);
     palabra = palabra.split("");
     // for(let i = 0; i <= palabra.length; i++) {
-    palabra = palabra.revverse();
+    palabra = palabra.reverse();
     console.log(palabra);
   }
 // -------------------------------
